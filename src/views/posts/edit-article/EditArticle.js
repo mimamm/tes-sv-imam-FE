@@ -48,7 +48,7 @@ const EditArticle = () => {
         if (category.length < 3 && category.length !== 0) setCategoryValid(false)
         else setCategoryValid(true)
 
-        if (title.length > 20 && content.length > 200 && category.length > 3) setButtonValid(true)
+        if (title.length >= 20 && content.length >= 200 && category.length >= 3) setButtonValid(true)
         else setButtonValid(false)
     })
 
