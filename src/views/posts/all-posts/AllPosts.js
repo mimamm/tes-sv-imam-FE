@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Link} from "react-router-dom";
 import Nav from '../../../reusable/Nav'
 import axios from 'axios'
+import CIcon from '@coreui/icons-react'
 import {
   CButton,
   CCard,
@@ -107,11 +108,12 @@ const AllPosts = () => {
                             return (
                             <td className="py-2">
                                 <Link to={{pathname: "/posts/edit", data: item}} onClick={() => handleEdit(item)}>
-                                    <CButton size="sm" color="info">Edit
+                                    <CButton size="sm" color="info">
+                                        <CIcon name="cil-pencil"></CIcon>
                                     </CButton>
                                 </Link>
                                 <CButton onClick={() => DeleteArticle(item.id)} size="sm" color="danger" className="ml-1">
-                                    Delete
+                                    <CIcon name="cil-trash"></CIcon>
                                 </CButton>
                             </td>
                             )
