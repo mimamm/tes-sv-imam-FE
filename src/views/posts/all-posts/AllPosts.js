@@ -126,13 +126,13 @@ const AllPosts = () => {
             color="danger"
         >
             <CModalHeader closeButton>
-            <CModalTitle>Modal title</CModalTitle>
+            <CModalTitle>Delete Confirmation</CModalTitle>
             </CModalHeader>
             <CModalBody>
-            Lorem
+            Are you sure want to move this article to thrash?
             </CModalBody>
             <CModalFooter>
-                <CButton color="danger" onClick={() => handleDelete(id)}>Do Something</CButton>{' '}
+                <CButton color="danger" onClick={() => handleDelete(id)}>Yes</CButton>{' '}
                 <CButton color="secondary" onClick={() => setVisible(!visible)}>Cancel</CButton>
             </CModalFooter>
         </CModal>
